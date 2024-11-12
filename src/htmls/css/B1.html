@@ -7,94 +7,161 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
     body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f4f4f4;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-    .header {
-        width: 100%;
-    }
+.header {
+    width: 100%;
+}
 
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        padding-top: 80px;
-        box-sizing: border-box;
-    }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px; /* Asegura que el contenido no quede solapado por el header */
+    box-sizing: border-box;
+}
 
-    .inner-container {
-        max-width: 800px;
-        width: 100%;
-        background-color: white;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+.inner-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    .content {
-        text-align: justify;
-    }
+.content {
+    text-align: justify;
+}
 
-    .section {
-        margin-bottom: 40px;
-    }
+.section {
+    margin-bottom: 40px;
+}
 
-    /* Estilos para las imágenes flotantes */
-    .content-img-left {
-        float: left;
-        margin: 0 20px 20px 0;
-        max-width: 45%; /* Ajusta el tamaño según lo necesites */
-        border-radius: 8px;
-        border: 2px solid #03045E;
-    }
+.content-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centra la imagen */
+    border-radius: 8px;
+    border: 2px solid #03045E;
+}
 
-    .content-img-right {
-        float: right;
-        margin: 0 0 20px 20px;
-        max-width: 45%; /* Ajusta el tamaño según lo necesites */
-        border-radius: 8px;
-        border: 2px solid #03045E;
-    }
+.separador {
+    border-top: 2px solid #03045E;
+    margin: 40px 0;
+}
 
-    .separador {
-        clear: both;
-        border-top: 2px solid #03045E;
-        margin: 40px 0;
-    }
+.features-list, .functions-list {
+    list-style-type: square;
+    padding-left: 40px;
+    text-align: left;
+    color: #555;
+}
 
-    h2 {
-        text-align: center;
-    }
+h2{
+    text-align: center;
+}
 
-    h3 {
-        text-align: center;
-    }
+h3{
+    text-align: center;
+}
 
-    .primary-button {
-        display: inline-block;
-        margin: 20px auto;
-        padding: 20px 30px;
-        font-size: 1.2em;
-        background-color: #023E8A;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+.primary-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 20px 30px; /* Tamaño del botón */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    background-color: #023E8A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .header {
+    display: flex;
+    justify-content: flex-start; /* Alinear contenido hacia la izquierda */
+    align-items: center;
+    background-color: #023E8A;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    width: 100%;
+    padding: 10px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    gap: 40px; /* Espacio entre el logo/texto y el menú */
+}
+
+/* Enlace de header */
+.header__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* Logo de imagen en el header */
+.header__img {
+    width: 90px;
+}
+
+/* Texto del header */
+.header__texto {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+/* Menu principal */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1; /* Permite que el menú ocupe el espacio restante */
+}
+
+/* Lista de enlaces en el menú */
+.menu__list {
+    display: flex;
+    gap: 25px; /* Espacio entre los elementos del menú */
+}
+
+/* Enlace de cada elemento del menú */
+.menu__link a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px; /* Espacio alrededor del texto */
+    transition: background-color 0.3s;
+}
+
+/* Efecto de hover */
+.menu__link a:hover {
+    background-color: #03045E;
+    border-radius: 5px;
+}
+
+
+
   </style>
 </head>
 <body>
 
+    <!-- Barra de menú superior (Header) -->
     <header class="header">
         <a href="#" class="header__link">
+            
             <h1 class="header__texto">PIA</h1>
         </a>    
+        
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__link"><a href="index.html">Portada</a></li>
@@ -103,30 +170,113 @@
                 <li class="menu__link"><a href="B3.html">Biografia 3</a></li>
                 <li class="menu__link"><a href="B4.html">Biografia 4</a></li>
                 <li class="menu__link"><a href="B5.html">Biografia 5</a></li>
+                
             </ul>
         </nav>
     </header>
 
+    <!-- Contenedor principal -->
     <div class="container">
         <div class="inner-container">
             <section class="content">
+                <!-- Introducción -->
                 <div class="section">
+                    
                     <h2><span style="color: #4e8ddf; font-weight: bold;">Salvador Villalobos Diaz</span></h2>
+                    <br>
                     <h3>Mi Biografia</h3>
-                    <p>Nací el 8 de octubre del 2004, en el hospital Ginequito, Monterrey, Nuevo León. Mis papás me pusieron de nombre Salvador.</p>
-                    <img src="b1.jpg" alt="Imagen izquierda" class="content-img-left">
+                    <p>Naci el 8 de octubre del 2004 , en el hospital Ginequito, Monterrey, Nuevo Leon. Mis papas
+                        me pusieron de nombre Salvador.
+                    </p>
+                    <img src="b1.jpg" alt="Imagen izquierda"  class="content-img">
                 </div>
 
+              
+
+               
+
+                <!-- Tipos de Memorias en Windows 98 -->
                 <div class="section">
-                    <p>A los dos años de edad, me inscribieron a la guardería llamada Crece y Aprende.</p>
-                    <p>Ahí en la guardería Crece y Aprende, duré 2 años.</p>
-                    <img src="guarderia.jpg" alt="Imagen derecha" class="content-img-right">
+                    
+                    <br>
+                    <p>A los dos años de edad, me inscribieron ala guarderia , que la guarderia 
+                        se llama Crece y aprende. </p>
+                        <p> Ahi en la guarderia crece y aprende dure 2 años.</p>
+                        
+                        <img src="guarderia.jpg" alt="Imagen izquierda"  class="content-img">
+                        
+                    
+                    <h4></h4>
+                    <p></p>
+                    
                 </div>
 
-                <div class="separador"></div>
+                <img src="./assets/img/Memoria1_Windows98.jpg" class="content-img">
+
+                <hr class="separador">
+
+                <!-- Sistema de Archivos en Windows 98 -->
+                <div class="section">
+                    <h3></h3>
+                    <br>
+                    <p></p>
+                    
+                    
+
+                    <img src="./assets/img/FAT32.jpeg" alt="Imagen de memoria" class="content-img">
+
+                    <h4></h4>
+                   
+                </div>
+
+                <img src="./assets/img/sistemadearchivos.jpg" alt="Imagen de memoria" class="content-img">
+
+                <hr class="separador">
+
+                <!-- Nuevas Secciones Agregadas al Final -->
+                <div class="section">
+                    <h3></h3>
+                </div>
+                <img src="./assets/img/WIN98_Mem.gif" alt="Imagen de memoria" class="content-img">
+
+                <p></p> 
+                
+                
+                
+                <hr class="separador"> <!-- Línea separadora -->
+
+                        <!-- Seguridad de Memoria en Windows 98 -->
+                        <div class="section">
+                            <h3></h3>
+                             <br>
+                             <p></p>
+
+</div>
+                
+
+                <hr class="separador">
+
+                <!-- Control de Espacios de Memoria en Windows 98 -->
+                <div class="section">
+                    <h3></h3>
+                </div>
+                <p></p>
+                <!--CMD-->
+                <hr class="separador"> <!-- Línea separadora -->
+                <div class="section">
+                    <h3></h3>
+                </div>
+                <img src="./assets/img/vcache.jpg" alt="Imagen de memoria" class="content-img">
+
+                <p></p>
+                
+                
+
+
             </section>
         </div>
     </div>
-
+   
 </body>
 </html>
+
