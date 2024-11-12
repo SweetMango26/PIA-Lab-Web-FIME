@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PiaPrograWebFime</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+
+    .inner-container {
+        max-width: 800px;
+        width: 100%;
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+        text-align: justify;
+    }
+
+    .section {
+        margin-bottom: 40px;
+    }
+
+    /* Estilos para las imágenes flotantes */
+    .content-img-left {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 45%; /* Ajusta el tamaño según lo necesites */
+        border-radius: 8px;
+        border: 2px solid #03045E;
+    }
+
+    .content-img-right {
+        float: right;
+        margin: 0 0 20px 20px;
+        max-width: 45%; /* Ajusta el tamaño según lo necesites */
+        border-radius: 8px;
+        border: 2px solid #03045E;
+    }
+
+    .separador {
+        clear: both;
+        border-top: 2px solid #03045E;
+        margin: 40px 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .primary-button {
+        display: inline-block;
+        margin: 20px auto;
+        padding: 20px 30px;
+        font-size: 1.2em;
+        background-color: #023E8A;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="header__link">
+            <h1 class="header__texto">PIA</h1>
+        </a>    
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__link"><a href="index.html">Portada</a></li>
+                <li class="menu__link"><a href="B1.html">Biografia 1</a></li>
+                <li class="menu__link"><a href="B2.html">Biografia 2</a></li>
+                <li class="menu__link"><a href="B3.html">Biografia 3</a></li>
+                <li class="menu__link"><a href="B4.html">Biografia 4</a></li>
+                <li class="menu__link"><a href="B5.html">Biografia 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="inner-container">
+            <section class="content">
+                <div class="section">
+                    <h2><span style="color: #4e8ddf; font-weight: bold;">Salvador Villalobos Diaz</span></h2>
+                    <h3>Mi Biografia</h3>
+                    <p>Nací el 8 de octubre del 2004, en el hospital Ginequito, Monterrey, Nuevo León. Mis papás me pusieron de nombre Salvador.</p>
+                    <img src="b1.jpg" alt="Imagen izquierda" class="content-img-left">
+                </div>
+
+                <div class="section">
+                    <p>A los dos años de edad, me inscribieron a la guardería llamada Crece y Aprende.</p>
+                    <p>Ahí en la guardería Crece y Aprende, duré 2 años.</p>
+                    <img src="guarderia.jpg" alt="Imagen derecha" class="content-img-right">
+                </div>
+
+                <div class="separador"></div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

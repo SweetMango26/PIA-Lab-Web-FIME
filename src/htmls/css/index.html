@@ -115,6 +115,37 @@
         font-size: 0.9em;
         color: #666;
     }
+
+    /* Nueva sección sombreada */
+    .footer-section {
+        background-color: #cce7f0;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .footer-section img {
+        width: 150px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .footer-section img.left {
+        left: 20px;
+    }
+
+    .footer-section img.right {
+        right: 20px;
+    }
+
+    .footer-section p {
+        font-size: 1em;
+        color: #333;
+        padding: 0 200px; /* Añadir espacio para las imágenes */
+    }
+
   </style>
 </head>
 <body>
@@ -123,11 +154,11 @@
     <nav class="menu">
       <ul class="menu__list">
           <li class="menu__link"><a href="PPrincipal.html">Introducción</a></li>
-          <li class="menu__link"><a href="B1">Biografia 1</a></li>
-          <li class="menu__link"><a href="B2">Biografia 2</a></li>
-          <li class="menu__link"><a href="B3">Biografia 3</a></li>
-          <li class="menu__link"><a href="B4">Biografia 4</a></li>
-          <li class="menu__link"><a href="B5">Biografia 5</a></li>
+          <li class="menu__link"><a href="B1.html">Biografia 1</a></li>
+          <li class="menu__link"><a href="B2.html">Biografia 2</a></li>
+          <li class="menu__link"><a href="B3.html">Biografia 3</a></li>
+          <li class="menu__link"><a href="B4.html">Biografia 4</a></li>
+          <li class="menu__link"><a href="B5.html">Biografia 5</a></li>
       </ul>
     </nav>
   </header>
@@ -135,15 +166,15 @@
   <section class="container">
     <h2>Lab Programacion Web</h2>
     <p>P.I.A<br>Equipo 1<br>Docente: Ing. Daniela<br>Agosto - Diciembre 2024</p>
-    
   </section>
 
   <section class="team-section">
     <h3>Equipo 1</h3>
     <div class="team-container">
       <div class="team-member">
-        <h4>Jona</h4>
-        <p></p>
+        <h4>Jonathan Moises Adame Gamez</h4>
+        <p>1991947</p>
+        <p>IAS</p>
       </div>
       <div class="team-member">
         <h4>Salvador Villalobos Díaz</h4>
@@ -151,22 +182,28 @@
         <p>IAS</p>
       </div>
       <div class="team-member">
-        <h4></h4>
-        <p></p>
+        <h4>Diego Damian Villanueva Almaraz</h4>
+        <p>2080016</p>
+        <p>IAS</p>
       </div>
       <div class="team-member">
-        <h4></h4>
-        <p></p>
+        <h4>Adriana Yaneth Cruz Florencia</h4>
+        <p>2033449</p>
+        <p>IAS</p>
       </div>
       <div class="team-member">
-        <h4></h4>
-        <p></p>
-      </div>
-      <div class="team-member">
-        <h4></h4>
-        <p></p>
+        <h4>Johan Omar Redendiz Delabra</h4>
+        <p>2084625</p>
+        <p>ITS</p>
       </div>
     </div>
+  </section>
+
+  <!-- Nueva sección sombreada -->
+  <section class="footer-section">
+    <img src="fi.png" alt="Imagen izquierda" class="left">
+    <img src="UNI.png" alt="Imagen derecha" class="right">
+    <p>Este proyecto fue desarrollado por el equipo 1 como parte del curso de Programación Web en la Facultad de Ingeniería Mecánica y Eléctrica. Agradecemos el apoyo de nuestra docente, la Ing. Daniela, por su orientación y enseñanza.</p>
   </section>
 
   <app-root></app-root>
