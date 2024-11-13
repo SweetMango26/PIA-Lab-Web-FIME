@@ -149,7 +149,12 @@ h3{
     border-radius: 5px;
 }
 
-
+/* Contenedor para alinear imágenes en fila */
+.img-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre las imágenes */
+}
 
   </style>
 </head>
@@ -191,27 +196,37 @@ h3{
                     <img src="b1.jpg" alt="Imagen izquierda"  class="content-img">
                 </div>
 
-              
-
-               
+                <hr class="separador">
 
                 <!-- Tipos de Memorias en Windows 98 -->
                 <div class="section">
-                    
+                    <h3>Entre a la guarderia en el 2006.</h3>
                     <br>
-                    <p>A los dos años de edad, me inscribieron ala guarderia , que la guarderia 
-                        se llama Crece y aprende. </p>
-                        <p> Ahi en la guarderia crece y aprende dure 2 años.</p>
-                        
-                        <img src="guarderia.jpg" alt="Imagen izquierda"  class="content-img">
-                        
+                    <p>A los dos años de edad, me inscribieron a la guardería, que se llama Crece y aprende.</p>
+                    <p>Ahí en la guardería Crece y Aprende duré 2 años.</p>
                     
-                    <h4></h4>
-                    <p></p>
+                    <!-- Contenedor de imágenes en fila -->
+                    <div class="img-row">
+                        <img src="guarderia.jpg" alt="Imagen de guardería" class="content-img">
+                        <img src="b1.jpg" alt="Otra imagen" class="content-img"> <!-- Nueva imagen al lado -->
+                    </div>
+                    
+                    
                     
                 </div>
+                <hr class="separador">
 
-                <img src="./assets/img/Memoria1_Windows98.jpg" class="content-img">
+                <h3>Entre al kinder en el año 2008.</h3>
+                    <br>
+                    <p>A los dos años de edad, me inscribieron a la guardería, que se llama Crece y aprende.</p>
+                    <p>Ahí en la guardería Crece y Aprende duré 2 años.</p>
+                    
+                    <!-- Contenedor de imágenes en fila -->
+                    <div class="img-row">
+                        <img src="guarderia.jpg" alt="Imagen de guardería" class="content-img">
+                        <img src="b1.jpg" alt="Otra imagen" class="content-img"> <!-- Nueva imagen al lado -->
+                    </div>
+               
 
                 <hr class="separador">
 
@@ -221,12 +236,9 @@ h3{
                     <br>
                     <p></p>
                     
-                    
-
                     <img src="./assets/img/FAT32.jpeg" alt="Imagen de memoria" class="content-img">
 
                     <h4></h4>
-                   
                 </div>
 
                 <img src="./assets/img/sistemadearchivos.jpg" alt="Imagen de memoria" class="content-img">
@@ -241,18 +253,14 @@ h3{
 
                 <p></p> 
                 
-                
-                
-                <hr class="separador"> <!-- Línea separadora -->
+                <hr class="separador">
 
-                        <!-- Seguridad de Memoria en Windows 98 -->
-                        <div class="section">
-                            <h3></h3>
-                             <br>
-                             <p></p>
-
-</div>
-                
+                <!-- Seguridad de Memoria en Windows 98 -->
+                <div class="section">
+                    <h3></h3>
+                    <br>
+                    <p></p>
+                </div>
 
                 <hr class="separador">
 
@@ -261,8 +269,10 @@ h3{
                     <h3></h3>
                 </div>
                 <p></p>
-                <!--CMD-->
-                <hr class="separador"> <!-- Línea separadora -->
+                
+                <hr class="separador">
+                
+                <!-- Imagen adicional -->
                 <div class="section">
                     <h3></h3>
                 </div>
@@ -270,13 +280,9 @@ h3{
 
                 <p></p>
                 
-                
-
-
             </section>
         </div>
     </div>
    
 </body>
 </html>
-
