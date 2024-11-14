@@ -1,99 +1,266 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografía de Johan Omar Reséndiz Delabra</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0000ff;
-            background-image: repeating-linear-gradient(
-                45deg,
-                #0000ff,
-                #0000ff 10px,
-                #ffffff 10px,
-                #ffffff 20px
-            );
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow-x: auto; /* Permite desplazamiento horizontal */
-            flex-direction: row; /* Configura el desplazamiento hacia los lados */
-        }
-        .biography-container {
-            display: flex;
-            flex-direction: row; /* Alinea los elementos en fila (horizontalmente) */
-            width: auto;
-            max-width: none;
-            background-color: rgb(61, 60, 60);
-            border: 5px solid #0000ff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        h2 {
-            color: #008000; /* Color verde para los encabezados */
-        }
-        p {
-            color: #000000; /* Color negro para el texto */
-        }
-        img {
-            max-width: 60%;  /* Reduce el ancho máximo de la imagen al 60% del contenedor */
-            height: auto;
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>PiaPrograWebFime</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px; /* Asegura que el contenido no quede solapado por el header */
+    box-sizing: border-box;
+}
+
+.inner-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    text-align: justify;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.content-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centra la imagen */
+    border-radius: 8px;
+    border: 2px solid #03045E;
+}
+
+.separador {
+    border-top: 2px solid #03045E;
+    margin: 40px 0;
+}
+
+.features-list, .functions-list {
+    list-style-type: square;
+    padding-left: 40px;
+    text-align: left;
+    color: #555;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.primary-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 20px 30px; /* Tamaño del botón */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    background-color: #023E8A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .header {
+    display: flex;
+    justify-content: flex-start; /* Alinear contenido hacia la izquierda */
+    align-items: center;
+    background-color: #023E8A;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    width: 100%;
+    padding: 10px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    gap: 40px; /* Espacio entre el logo/texto y el menú */
+}
+
+/* Enlace de header */
+.header__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* Logo de imagen en el header */
+.header__img {
+    width: 90px;
+}
+
+/* Texto del header */
+.header__texto {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+/* Menu principal */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1; /* Permite que el menú ocupe el espacio restante */
+}
+
+/* Lista de enlaces en el menú */
+.menu__list {
+    display: flex;
+    gap: 25px; /* Espacio entre los elementos del menú */
+}
+
+/* Enlace de cada elemento del menú */
+.menu__link a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px; /* Espacio alrededor del texto */
+    transition: background-color 0.3s;
+}
+
+/* Efecto de hover */
+.menu__link a:hover {
+    background-color: #03045E;
+    border-radius: 5px;
+}
+
+/* Contenedor para alinear imágenes en fila */
+.img-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+  </style>
 </head>
 <body>
-    <div class="biography-container">
-        <div>
-            <h2>¿Quién soy?</h2>
-            <p>Mi nombre es Johan Omar Reséndiz Delabra. Tengo 19 años, nací el 15 de junio de 2005 y actualmente estoy estudiando Ingeniería en Software en la Facultad de Ingeniería Eléctrica y Mecánica. Me encuentro en el cuarto semestre de la carrera.</p>
-            <img src="Johan.jpg" alt="Foto de Johan Omar Reséndiz Delabra">
-        </div>
 
-        <div>
-            <h2>Rasgos</h2>
-            <p>Suelo ser una persona amable, y algunos de mis rasgos distintivos son que uso lentes, tengo una estatura promedio, visto de manera casual la mayor parte del tiempo y casi siempre llevo audífonos.</p>
-            <img src="Basket.jpg" alt="Imagen de baloncesto">
-        </div>
+    <!-- Barra de menú superior (Header) -->
+    <header class="header">
+        <a href="#" class="header__link">
+            
+            <h1 class="header__texto">PIA</h1>
+        </a>    
+        
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__link"><a href="index.html">Portada</a></li>
+                <li class="menu__link"><a href="B1.html">Biografia 1</a></li>
+                <li class="menu__link"><a href="B2.html">Biografia 2</a></li>
+                <li class="menu__link"><a href="B3.html">Biografia 3</a></li>
+                <li class="menu__link"><a href="B4.html">Biografia 4</a></li>
+                <li class="menu__link"><a href="B5.html">Biografia 5</a></li>
+                
+            </ul>
+        </nav>
+    </header>
 
-        <div>
-            <h2>Pasatiempos</h2>
-            <p>Me gusta jugar videojuegos, escuchar música y, ocasionalmente, jugar básquetbol. Disfruto especialmente jugar videojuegos con mis amigos, ya que tengo varias consolas que nos permiten pasar buenos momentos juntos. En cuanto a la música, mis géneros favoritos son el pop y el folklore. Aunque no practico básquetbol con frecuencia, suelo jugar al menos una vez a la semana.</p>
-            <img src="PlayStation 5.jpg" alt="Imagen de PlayStation 5">
-        </div>
-        <div>
-            <h2>Pasatiempos</h2>
-            <p>Me gusta jugar videojuegos, escuchar música y, ocasionalmente, jugar básquetbol. Disfruto especialmente jugar videojuegos con mis amigos, ya que tengo varias consolas que nos permiten pasar buenos momentos juntos. En cuanto a la música, mis géneros favoritos son el pop y el folklore. Aunque no practico básquetbol con frecuencia, suelo jugar al menos una vez a la semana.</p>
-            <img src="FIme.jpg" alt="Imagen de FIme">
-        </div>
-        <div>
-            <p>Salir a caminar es otra de mis actividades favoritas, especialmente cuando escucho música y disfruto de los atardeceres y los paisajes de mi alrededor. Además de mi carrera en Ingeniería en Tecnología de Software (ITS), estoy aprendiendo japonés por mi cuenta, como parte de mi interés por ampliar mis conocimientos y habilidades.</p>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <div class="inner-container">
+            <section class="content">
+                <!-- Introducción -->
+                <div class="section">
+                    
+                    <h2><span style="color: #4e8ddf; font-weight: bold;">Johan Omar Resendiz Delabra</span></h2>
+                    <br>
+                    <h3>Mi Biografia</h3>
+                    <p>
+                    </p>
+                    <img src="ImagenesJohan/Johan.jpg" alt="Imagen Johan"  class="content-img" style="width: 200px; height: 250px;">
+                </div>
+
+                <hr class="separador">
+
+                <!-- Tipos de Memorias en Windows 98 -->
+                <div class="section">
+                    
+                    <br>
+                    <p>Mi nombre es Johan Omar Reséndiz Delabra. Tengo 19 años, nací el 15 de junio de 2005 y actualmente estoy estudiando Ingeniería en Software en la Facultad de Ingeniería Eléctrica y Mecánica. Me encuentro en el cuarto semestre de la carrera. .</p>
+                    
+                    
+                    <!-- Contenedor de imágenes en fila -->
+                    <div class="img-row">
+                        <img src="Imagenesjohan/MTY.jpg" alt="Imagen de Monterrey" class="content-img"  style="width: 250px; height: 200px;">
+                        <img src="ImagenesJohan/Facultad.jpg" alt="UNIVERSIDAD" class="content-img" style="width: 250px; height: 200px;"> <!-- Nueva imagen al lado -->
+                    </div>
+                    
+                    
+                    
+                </div>
+                <hr class="separador">
+
+                <h3>Rasgos</h3>
+                <br>
+                <p>Suelo ser una persona amable, y algunos de mis rasgos distintivos son que uso lentes, tengo una estatura promedio, visto de manera casual la mayor parte del tiempo y casi siempre llevo audífonos..</p>
+               
+                
+                <!-- Contenedor de imágenes en fila -->
+                <div class="img-row">
+                    <img src="ImagenesJohan/Audifonos.jpg" alt="Imagen Audifonos" class="content-img" style="width: 150px; height: 200px;">
+                    <img src="ImagenesJohan/Lentes.jpg" alt="lentes" class="content-img" style="width: 300px; height: 200px;"> <!-- Nueva imagen al lado -->
+                </div>
+               
+
+                <hr class="separador">
+                <h3>Pasatiempo</h3>
+                <br>
+                <p>Me gusta jugar videojuegos, escuchar música y, ocasionalmente, jugar básquetbol. Disfruto especialmente jugar videojuegos con mis amigos, ya que tengo varias consolas que nos permiten pasar buenos momentos juntos. En cuanto a la música, mis géneros favoritos son el pop y el folklore. Aunque no practico básquetbol con frecuencia, suelo jugar al menos una vez a la semana.. </p>
+               
+                
+                <!-- Contenedor de imágenes en fila -->
+                <div class="img-row">
+                    <img src="ImagenesJohan/PlayStation 5.jpg" alt="Imagen Ps5" class="content-img" style="width: 300px; height: 200px;">
+                    <img src="ImagenesJohan/Basket.jpg" alt="Otra imagen" class="content-img" style="width: 150px; height: 200px;"> <!-- Nueva imagen al lado -->
+                </div>
+
+              
+
+                <hr class="separador">
+                <br>
+                <p>Salir a caminar es otra de mis actividades favoritas, especialmente cuando escucho música y disfruto de los atardeceres y los paisajes de mi alrededor.
+Además de mi carrera en Ingeniería en Tecnología de Software (ITS), estoy aprendiendo japonés por mi cuenta, como parte de mi interés por ampliar mis conocimientos y habilidades.
+ </p>
+               
+                
+                <!-- Contenedor de imágenes en fila -->
+                <div class="img-row">
+                    <img src="ImagenesJohan/Oso de FIME.jpg" alt="Imagen Oso" class="content-img" style="width: 300px; height: 200px;">
+                    <img src="ImagenesJohan/Atardecer.jpg" alt="Otra imagen" class="content-img" style="width: 200px; height: 200px;"> <!-- Nueva imagen al lado -->
+                </div>
+                
+                <hr class="separador">
+
+                <p>  </p>
+                
+            </section>
         </div>
     </div>
+   
 </body>
 </html>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #000000; /* Fondo negro */
-        background-image: repeating-linear-gradient(
-            45deg,
-            #000000, /* Color negro para las franjas */
-            #000000 10px,
-            #0000ff 10px, /* Color azul para las franjas */
-            #0000ff 20px
-        );
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
-</style>
